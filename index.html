@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Question & Answer</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="center column">
+      <div>
+        <textarea
+          class="textbox"
+          name="questiontext"
+          id="questiontext"
+          placeholder="Enter your question"
+        ></textarea>
+        <br />
+        <br />
+        <input
+          type="submit"
+          name="postQuestionBtn"
+          value="Post your question"
+        />
+        <br />
+      </div>
+      <br />
+      <br />
+
+      <div>
+        <form
+          id="answerSearch"
+          action="https://yvd7qvuuik.execute-api.us-east-1.amazonaws.com/alpha/answers"
+          method="GET"
+        >
+          <textarea
+            class="textbox"
+            name="q"
+            id="answertext"
+            placeholder="Input query"
+          ></textarea>
+          <br />
+          <br />
+          <button type="submit" name="searchAnswerBtn" id="answerbtn">
+            Search answer
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
